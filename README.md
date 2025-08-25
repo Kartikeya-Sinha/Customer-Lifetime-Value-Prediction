@@ -15,8 +15,8 @@ An attention-based transformer model specifically tailored for tabular data. Thi
 3. Hybrid Residual Learning Model
 A novel sequential ensemble approach that combines the strengths of both architectures through residual learning. The method works in two stages:
 
-Stage 1: Train the FTTransformer to capture primary patterns and complex feature interactions
-Stage 2: Train the Tabular Neural Network on the residuals (prediction errors) from the FTTransformer to capture systematic patterns that the transformer missed
+Stage 1: Train the FTTransformer to capture primary patterns and complex feature interactions<br>
+Stage 2: Train the Tabular Neural Network on the residuals from the FTTransformer to capture systematic patterns that the transformer missed<br>
 This hybrid approach leverages the transformer's ability to model complex relationships while utilizing the tabular network's effectiveness at capturing local patterns and categorical embeddings.
 
 ### Model Performance (MAPE)
