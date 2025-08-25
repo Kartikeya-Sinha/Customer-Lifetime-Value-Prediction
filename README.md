@@ -6,13 +6,13 @@ The dataset underwent rigorous preprocessing, including outlier detection, log-t
 ### Deep Learning Approaches
 This project implements three advanced deep learning approaches for CLV prediction:
 
-1. Tabular Neural Network with Embeddings
+1. Tabular Neural Network with Embeddings<br>
 A traditional feedforward neural network that leverages learned embeddings for categorical features and direct processing of numerical features. The architecture includes multiple dense layers with dropout regularization, optimized through Bayesian hyperparameter tuning.
 
-2. FTTransformer
+2. FTTransformer<br>
 An attention-based transformer model specifically tailored for tabular data. This model tokenizes both categorical and numerical features into embeddings and processes them through transformer blocks, capturing complex feature interactions through self-attention mechanisms.
 
-3. Hybrid Residual Learning Model
+3. Hybrid Residual Learning Model<br>
 A novel sequential ensemble approach that combines the strengths of both architectures through residual learning. The method works in two stages: Train the FTTransformer to capture primary patterns and complex feature interactions. Train the Tabular Neural Network on the residuals from the FTTransformer to capture systematic patterns that the transformer missed. This hybrid approach leverages the transformer's ability to model complex relationships while utilizing the tabular network's effectiveness at capturing local patterns and categorical embeddings.
 
 ### Model Performance (MAPE)
