@@ -13,11 +13,7 @@ A traditional feedforward neural network that leverages learned embeddings for c
 An attention-based transformer model specifically tailored for tabular data. This model tokenizes both categorical and numerical features into embeddings and processes them through transformer blocks, capturing complex feature interactions through self-attention mechanisms.
 
 3. Hybrid Residual Learning Model
-A novel sequential ensemble approach that combines the strengths of both architectures through residual learning. The method works in two stages:
-
-Stage 1: Train the FTTransformer to capture primary patterns and complex feature interactions<br>
-Stage 2: Train the Tabular Neural Network on the residuals from the FTTransformer to capture systematic patterns that the transformer missed<br>
-This hybrid approach leverages the transformer's ability to model complex relationships while utilizing the tabular network's effectiveness at capturing local patterns and categorical embeddings.
+A novel sequential ensemble approach that combines the strengths of both architectures through residual learning. The method works in two stages: Train the FTTransformer to capture primary patterns and complex feature interactions. Train the Tabular Neural Network on the residuals from the FTTransformer to capture systematic patterns that the transformer missed. This hybrid approach leverages the transformer's ability to model complex relationships while utilizing the tabular network's effectiveness at capturing local patterns and categorical embeddings.
 
 ### Model Performance (MAPE)
 Tabular Neural Network: 8.38%<br>
