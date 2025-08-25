@@ -20,8 +20,8 @@ Stage 2: Train the Tabular Neural Network on the residuals (prediction errors) f
 This hybrid approach leverages the transformer's ability to model complex relationships while utilizing the tabular network's effectiveness at capturing local patterns and categorical embeddings.
 
 ### Model Performance (MAPE)
-Tabular Neural Network: 8.38%
-FTTransformer:	7.33%	
+Tabular Neural Network: 8.38%<br>
+FTTransformer:	7.33%<br>	
 Hybrid Model:	2.29%	
 
 This work demonstrates the power of deep learning for CLV prediction and underscores the value of data-driven strategies in enhancing customer management, retention, and targeted growth in the retail sector.
